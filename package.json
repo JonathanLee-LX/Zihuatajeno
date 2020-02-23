@@ -34,7 +34,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -r https://$PUBLISH_TOKEN@github.com/jonathanlee-lx/Zihuatajeno.git"
+    "deploy": "gatsby build && gh-pages -d public -r https://$GITHUB_TOKEN@github.com/jonathanlee-lx/Zihuatajeno.git"
   },
   "repository": {
     "type": "git",
