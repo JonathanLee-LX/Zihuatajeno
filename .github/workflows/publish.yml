@@ -15,9 +15,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Publish gh-pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - run: npm run install
+        run: npm run deploy
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
-          BRANCH: gh-pages
-          BUILD_SCRIPT: npm install && npm run deploy
-          FOLDER: public
