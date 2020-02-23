@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Publish gh-pages
-      - run: npm run install
+        run: npm run install
         run: npm run deploy
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
